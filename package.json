@@ -1,0 +1,29 @@
+{
+  "name": "facemaskwithdb",
+  "version": "1.0.0",
+  "description": "Advanced Face Mask detection system (alpha-version)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.4",
+    "simple-git": "^3.12.0",
+    "random": "^3.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryan0199/FaceMaskDetectionSystem_with-Violater_details.git"
+  },
+  "author": "Aryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aryan0199/FaceMaskDetectionSystem_with-Violater_details/issues"
+  },
+  "homepage": "https://github.com/Aryan0199/FaceMaskDetectionSystem_with-Violater_details#readme"
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceMask</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}" />
+    <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><span>MaskDetection</span>App</a>
+    <!-- <button onclick="func()">click</button>
+     <script>
+         function func(){
+             $.ajax({
+                 url: 'test.php',
+                 success: function(data){
+                     console.log(data)
+                 }
+             })
+         }
+     </script> -->
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#about">about</a>
+        <a href="#review">review</a>
+        <a href="#pricing">pricing</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Advanced Face Mask <span>Detection</span></h3>
+        <p>Wanna ensure safety of employees in your organization? Install our Advanced Face MAsk Detection System</p>
+        <a href="#" class="btn">download now</a>
+    </div>
+
+    <div class="image">
+        <!-- <img src="images/coronavirus.png" alt=""> -->
+        <img src="{{ url_for('static', filename='images/coronavirus.png') }}" alt="">
+        
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> app features </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/f1.jpg') }}" alt="">
+            
+            <h3>Face Mask Detection</h3>
+            <p>Helps in detecting whether individuals are wearing mask or not using improved <b>CNN Model</b> 
+                with <b>Haar Cascade Model</b> 
+            </p>
+            <a href="http://127.0.0.1:5000/cnn" class="btn">Activate</a>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/f2.jpg') }}" alt="">
+            
+            <h3>Face Detection</h3>
+            <p>Helps to detect individuals who are not wearing mask in workplace using Hybrid model of 
+                <b>CNN, LBPH and Haar Cascade</b>
+                  </p>
+            <a href="http://127.0.0.1:5000/hybrid" class="btn">Activate</a>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/f3.png') }}" alt="">
+            
+            <h3>Getting Violaters Details</h3>
+            <p>Helps in getting the details of those who are not wearing mask </p>
+            <a href="http://127.0.0.1:5000/records" class="btn">Activate</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about the app </h1>
+
+    <div class="column">
+
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/f4.svg') }}" alt="">
+            
+        </div>
+
+        <div class="content">
+            <h3>Easy And Perfect Solution For Your Organization</h3>
+            <p>FaceMask App protects your organization from becoming Coronavirus hotspot, by helping you identfy the individuals, not following the COVID-19 Norms.</p>
+            <p>Further, Our app also provide details of violater along with date and time. </p>
+
+            <div class="buttons">
+                <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
+                <a href="#" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- newsletter  -->
+
+<div class="newsletter">
+
+    <h3>Subscribe For New Features</h3>
+    <p>To maintain the flow of work, even during Covid times, don't hesitate on investing on us.</p>
+    <form action="">
+        <input type="email" placeholder="enter your email">
+        <input type="submit" value="Subscribe">
+    </form>
+
+</div>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> people's review </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="{{ url_for('static', filename='images/pic1.png') }}" alt="">
+                
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="comment">
+                    Never knew even such app exists.Its a must ofr every organization.
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src=" {{ url_for('static', filename='images/pic2.png') }}" alt="">
+               
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="comment">
+                    Really, they're solving a real problem prevailing everywhere.
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="{{ url_for('static', filename='images/pic3.png') }}" alt="">
+                
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="comment">
+                    Loved it, it easily gets integrated to the existing CCTV Cameras.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+
+    <h1 class="heading"> Our Pricing Plans </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="title">basic</h3>
+            <div class="price">$10<span>/monthly</span></div>
+            <ul>
+                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                <li> <i class="fas fa-check"></i> No transaction fees </li>
+                <li> <i class="fas fa-times"></i> unlimited storage </li>
+                <li> <i class="fas fa-times"></i> 5 downloads </li>
+            </ul>
+            <a href="#" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">standard</h3>
+            <div class="price">$15<span>/monthly</span></div>
+            <ul>
+                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                <li> <i class="fas fa-check"></i> No transaction fees </li>
+                <li> <i class="fas fa-check"></i> unlimited storage </li>
+                <li> <i class="fas fa-times"></i> 5 downloads </li>
+            </ul>
+            <a href="#" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">premium</h3>
+            <div class="price">$25<span>/monthly</span></div>
+            <ul>
+                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                <li> <i class="fas fa-check"></i> No transaction fees </li>
+                <li> <i class="fas fa-check"></i> unlimited storage </li>
+                <li> <i class="fas fa-check"></i> 5 downloads </li>
+            </ul>
+            <a href="#" class="btn">check out</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <div class="image">
+        <img src="{{ url_for('static', filename='images/contact-img.png') }}" alt="">
+        
+    </div>
+
+    <form action="">
+
+        <h1 class="heading">contact us</h1>
+
+        <div class="inputBox">
+            <input type="text" required>
+            <label>name</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" required>
+            <label>email</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" required>
+            <label>phone</label>
+        </div>
+
+        <div class="inputBox">
+            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <label>message</label>
+        </div>
+
+        <input type="submit" class="btn" value="send message">
+
+    </form>
+
+</section>
+
+<!-- contact section edns -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>We are students of Vellore Institue of Technology puruing Artifical Intelligence under 
+               <br> Prof. Geraldine Amali</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">features</a>
+            <a href="#">about</a>
+            <a href="#">review</a>
+            <a href="#">pricing</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">pinterest</a>
+            <a href="#">twitter</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> +91 7000819712 <br> +91 9630370330 </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> aryan.2019@vitstudent.ac.in <br> mearyan99@gmail.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Vellore,Tamil Nadu India - 632014 </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; copyright @ 2022 by Aryan </h1>
+
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
